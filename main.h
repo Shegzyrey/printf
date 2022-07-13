@@ -6,7 +6,6 @@
 #include <unistd.h>
 
 /**
-<<<<<<< HEAD
  * struct check - function to check for formats
  * @type: the format to print
  * @f: the print fuction to use
