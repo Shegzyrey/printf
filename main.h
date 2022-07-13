@@ -19,7 +19,6 @@
 
 typedef struct check
 {
-<<<<<<< HEAD
 	char *type;
 	int (*f)(va_list);
 } check_n;
