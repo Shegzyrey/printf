@@ -59,3 +59,31 @@ int print_integ(va_list list)
 	return (number);
 }
 
+
+/**
+ * print_unsigned - printing unsigned integer
+ * @integer: integer to be passed
+ * Return: number of characters
+ */
+
+int print_unsigned(va_list integer)
+{
+	unsigned int n;
+	int pow = 1;
+	int number = 0;
+
+	n = va_arg(integer, unsigned int);
+
+	for (; n / pow > 9;)
+		pow *= 10;
+	for (; pow != 0;)
+	{
+		number += _putchar(n / pow + '0');
+		n %= pow;
+		pow /= 10;
+	}
+	return (number);
+}
+
+
+

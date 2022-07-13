@@ -25,4 +25,5 @@ int print_string(va_list);
 int print_percent(va_list);
 int print_integ(va_list);
 int print_number(va_list);
+int print_unsigned(va_list);
 #endif
